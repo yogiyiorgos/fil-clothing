@@ -6,6 +6,7 @@ import Button from '../button/button.component'
 import './sign-in-form.styles.scss'
 
 import {
+  // eslint-disable-next-line
   createUserDocumentFromAuth,
   signInWithGooglePopup,
   signInUserWithEmailAndPassword,
@@ -33,6 +34,7 @@ const SignInForm = () => {
     event.preventDefault()
 
     try {
+      // eslint-disable-next-line
       const { user } = await signInUserWithEmailAndPassword(email, password)
       resetFormFields()
     } catch (error) {
